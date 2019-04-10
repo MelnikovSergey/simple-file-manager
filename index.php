@@ -6,16 +6,18 @@
 </head>
 <body>
 	<h1>Файлы и папки:</h1>
+	<ul>
 	<?php
 		$folder = 'dir';
 		if (is_dir($folder)) {
 			if ($dh = opendir($folder)) {
 				while (($file = readdir($dh)) !== false) {
-					echo "Файл: file : тип: \n"
+					echo "<li>" . $file . "</li>";
 				}
 				closedir($dh);
 			}
 		}
 	?>
+	</ul>
 </body>
 </html>
