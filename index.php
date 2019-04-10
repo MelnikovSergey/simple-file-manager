@@ -11,9 +11,9 @@
 		if (is_dir($folder)) {
 			if ($dh = opendir($folder)) {
 				while (($file = readdir($dh)) !== false) {
-					echo 'Файл'
+					echo "Файл: file : тип: \n"
 				}
-				closedir($dh)
+				closedir($dh);
 			}
 		}
 	?>
