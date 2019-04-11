@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Simple File-Manager</title>
+	<link rel="stylesheet" href="css/file-manager.css">
 </head>
 <body>
 	<h1>Файлы и папки:</h1>
