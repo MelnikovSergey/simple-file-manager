@@ -1,9 +1,16 @@
 * {
+	color: grey;
+	font-size: 18px;
+	font-family: Arial;
  	list-style-type: none;
 }
 
-.file,
-.folder {
+h1 {
+	font-size: 24px;
+	font-weight: 200;
+}
+
+.file, .folder {
 	width: 16px;
 	height: auto;
 	fill: grey;
