@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Simple File-Manager</title>
 </head>
 <body>
 	<h1>Файлы и папки:</h1>
@@ -14,9 +14,9 @@
 				while (($file = readdir($dh)) !== false) {
 					if($file !='.' and $file !='..') {
 						if(is_dir($folder . '/' . $file)) {
-							echo "<li>dir " . $file . "</li>";
+							echo "<li><img src='img/folder.svg' class='folder'> " . $file . "</li>";
 						} else {
-							echo "<li>file " . $file . "</li>";
+							echo "<li><img src='img/folder.svg' class='file'> " . $file . " " . filetype($folder . '/' . $file) . "</li>";
 						}
 					}
 				}
