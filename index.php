@@ -17,7 +17,7 @@
 						if(is_dir($folder . '/' . $file)) {
 							echo "<li><img src='img/folder.svg' class='folder'> " . $file . "</li>";
 						} else {
-							echo "<li><img src='img/folder.svg' class='file'> " . $file . " " . filetype($folder . '/' . $file) . "</li>";
+							echo "<li><img src='img/folder.svg' class='file'> " . $file . " " . filesize($folder . '/' . $file) . "</li>";
 						}
 					}
 				}
