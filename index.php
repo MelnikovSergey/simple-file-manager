@@ -12,7 +12,13 @@
 		if (is_dir($folder)) {
 			if ($dh = opendir($folder)) {
 				while (($file = readdir($dh)) !== false) {
-					echo "<li>" . $file . "</li>";
+					if($file !='.' and $file !='..') {
+						if(is_dir($file)) {
+							echo "<li>dir " . $file . "</li>";
+						} else {
+							echo "<li>file " . $file . "</li>";
+						}
+					}
 				}
 				closedir($dh);
 			}
